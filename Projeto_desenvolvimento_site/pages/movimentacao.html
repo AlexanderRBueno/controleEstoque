@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movimentação de Estoque</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: rgb(131, 131, 219);
+        }
+        nav{
+            background-color: rgb(32, 32, 168);
+            height: 30px;
+        }
+        form{
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(255, 255, 255);
+            width: 600px;
+            height: 600px;
+            padding-bottom: 100px;
+            padding-top: 50px;
+        }
+        label{
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 500;
+        }
+        .Elemento{
+            width: 500px;
+            height: 30px;
+            padding-left: 5px;
+        }
+        .botao{
+            background-color: rgb(89, 89, 226);
+            border: none;
+            color: white;
+            font-size: 15px;
+            height: 40px;
+        }
+        .botao:hover{
+            background-color: rgb(136, 136, 238);
+        }
+        .botao:active{
+            background-color: rgb(81, 81, 209);
+        }
+    </style>
+</head>
+<body>
+    <nav></nav>
+    <form action="">
+        <label for="">Movimentação de Estoque</label>
+        <select class="Elemento">
+            <option>Tipo de Movimentação</option>
+            <option value="Entrada">Entrada</option>
+            <option value="Saída">Saída</option>
+        </select>
+        <select class="Elemento">
+            <option>Selecione o Produto</option>
+        </select>
+        <input  class="Elemento" type="number" placeholder="Quantidade>:(">
+        <input  class="Elemento"type="date">
+        <textarea class="Elemento" name="motivo" placeholder="Motivo"></textarea>
+        <input  class="Elemento botao" type="submit" value="Registrar Movimentação">
+        <input  class="Elemento botao"type="button" value="Sair" onclick="window.location.href='home.html'">
+    </form>
+</body>
+</html>
